@@ -1,5 +1,36 @@
 import type { NextPage } from "next";
+import { useTheme } from "next-themes";
 import Head from "next/head";
+import { useEffect, useState } from "react";
+
+const ThemeChanger = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
+  return (
+    <>
+      <p>
+        The Next-themes library let&apos;s us change the theme without flashing
+        on the first load. The current themes is: <code>{theme}</code>
+      </p>
+      <div className="flex justify-around">
+        <button className="btn btn-primary" onClick={() => setTheme("light")}>
+          Light Mode
+        </button>
+        <button className="btn btn-secondary" onClick={() => setTheme("dark")}>
+          Dark Mode
+        </button>
+        <button className="btn btn-accent" onClick={() => setTheme("mytheme")}>
+          Custom Mode
+        </button>
+      </div>
+    </>
+  );
+};
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +44,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="prose prose-lg mx-auto">
+      <main className="prose prose-lg prose-h1:my-8 mx-auto">
         <h1>Next + TS + Tailwind + DaisyUI</h1>
+        <h2>Theme changing</h2>
+        <ThemeChanger />
         <h2>Decision making</h2>
         <p>
           I created this starter because from now on I&apos;m probably going to

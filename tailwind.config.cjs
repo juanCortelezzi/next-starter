@@ -1,10 +1,13 @@
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {},
   },
   daisyui: {
     themes: [
+      "dark",
+      "light",
       {
         mytheme: {
           primary: "#3ABFF8",

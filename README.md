@@ -9,5 +9,7 @@ npx create-next-app -e https://github.com/juancortelezzi/next-starter next-start
 
 yarn create next-app -e https://github.com/juancortelezzi/next-starter next-starter
 
-# idk how to use pnpm, if you do, feel free to PR :) 
+# or
+
+pnpm create next-app -e https://github.com/juancortelezzi/next-starter next-starter
 ```

@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["eslint:recommended", "next/core-web-vitals", "prettier"],
+  "rules": {
+    "no-console": "warn",
+    "no-duplicate-imports": "error",
+    "default-case-last": "error",
+    "eqeqeq": ["error", "always"],
+    "no-else-return": "error",
+    "no-lonely-if": "error",
+    "no-useless-return": "error",
+    "prefer-const": "warn",
+    "react/self-closing-comp": "warn",
+    "react/no-unescaped-entities": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  }
 }

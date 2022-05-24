@@ -6,7 +6,7 @@ const buildEslintCommand = (filenames) =>
     .join(" --file ")}`;
 
 const buildPrettierCommand = (filenames) =>
-  `prettier --write ${filenames
+  `prettier --config .prettierrc.js --write ${filenames
     .map((f) => path.relative(process.cwd(), f))
     .join(" ")}`;
 

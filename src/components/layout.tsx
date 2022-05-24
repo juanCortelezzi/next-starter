@@ -11,7 +11,7 @@ type Props = {
 
 export const Layout = ({ children, className, title, desc }: Props) => {
   return (
-    <div className="container max-w-4xl mx-auto my-4 min-h-screen flex flex-col space-y-4">
+    <div className="container mx-auto my-4 flex min-h-screen max-w-4xl flex-col space-y-4">
       <Head>
         <title>{title}</title>
         <meta name="description" content={desc} />

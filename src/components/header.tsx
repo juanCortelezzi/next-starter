@@ -1,15 +1,15 @@
 export const Header = () => (
   <header className="navbar rounded-lg shadow-md">
     <div className="flex-1">
-      <button className="btn btn-ghost normal-case text-xl">Template</button>
+      <button className="btn btn-ghost text-xl normal-case">Template</button>
     </div>
     <div className="flex-none">
-      <button className="btn btn-square btn-ghost">
+      <button className="btn btn-ghost btn-square">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className="inline-block w-5 h-5 stroke-current"
+          className="inline-block h-5 w-5 stroke-current"
         >
           <path
             strokeLinecap="round"

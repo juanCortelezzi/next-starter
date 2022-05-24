@@ -15,7 +15,7 @@ export const ThemeChanger = () => {
         The Next-themes library let&apos;s us change the theme without flashing
         on the first load. The current themes is: <code>{theme}</code>
       </p>
-      <div className="flex justify-center btn-group">
+      <div className="btn-group flex justify-center">
         <button className="btn btn-primary" onClick={() => setTheme("light")}>
           Light Mode
         </button>

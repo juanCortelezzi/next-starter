@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <Layout
       title="Frontend Template"
       desc="Simple Frontend template, just Ctrl + c and Ctrl + v"
-      className="prose prose-lg prose-h1:my-8 mx-auto"
+      className="prose prose-lg mx-auto prose-h1:my-8"
     >
       <h1>Next + TS + Tailwind + DaisyUI</h1>
       <h2>Theme changing</h2>

@@ -1,5 +1,13 @@
 {
-  "extends": ["eslint:recommended", "next/core-web-vitals", "prettier"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
   "rules": {
     "no-console": "warn",
     "no-duplicate-imports": "error",
@@ -9,6 +17,7 @@
     "no-lonely-if": "error",
     "no-useless-return": "error",
     "prefer-const": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
     "react/self-closing-comp": "warn",
     "react/no-unescaped-entities": "off",
     "react-hooks/rules-of-hooks": "error",

@@ -1,4 +1,4 @@
-## Nextjs + Typescript + Tailwind Template
+## Nextjs + Typescript + Tailwind + DaisyUI Template
 
 Just a template to copy over to new projects
 

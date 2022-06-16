@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { Layout } from "@/components/layout";
-import { ThemeChanger } from "@/components/themeSwitch";
+import { ThemeChanger } from "@/components/themeChanger";
 
 const Home: NextPage = () => {
   return (
     <Layout
       title="Frontend Template"
       desc="Simple Frontend template, just Ctrl + c and Ctrl + v"
-      className="prose prose-lg mx-auto prose-h1:my-8"
+      className="prose-sm w-full sm:prose sm:max-w-none"
     >
       <h1>Next + TS + Tailwind + DaisyUI</h1>
       <h2>Theme changing</h2>

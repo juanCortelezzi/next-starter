@@ -16,14 +16,23 @@ export const ThemeChanger = () => {
         on the first load. The current themes is: <code>{theme}</code>
       </p>
       <div className="btn-group flex justify-center">
-        <button className="btn btn-primary" onClick={() => setTheme("light")}>
-          Light Mode
+        <button
+          className="btn btn-primary btn-md"
+          onClick={() => setTheme("light")}
+        >
+          Light
         </button>
-        <button className="btn btn-secondary" onClick={() => setTheme("night")}>
-          Night Mode
+        <button
+          className="btn btn-secondary btn-md"
+          onClick={() => setTheme("night")}
+        >
+          Night
         </button>
-        <button className="btn btn-accent" onClick={() => setTheme("mytheme")}>
-          Custom Mode
+        <button
+          className="btn btn-accent btn-md"
+          onClick={() => setTheme("mytheme")}
+        >
+          Custom
         </button>
       </div>
     </div>

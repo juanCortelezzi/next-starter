@@ -1,9 +1,15 @@
-export const Header = () => (
-  <header className="navbar rounded-lg shadow-md">
-    <div className="flex-1">
-      <button className="btn btn-ghost text-xl normal-case">Template</button>
+type HeaderProps = {
+  className?: string;
+};
+
+export const Header = ({ className }: HeaderProps) => (
+  <header className={`navbar mx-0 mb-5 p-0 sm:mb-10 ${className && className}`}>
+    <div className="navbar-start">
+      <button className="btn btn-ghost ml-[-1rem] text-xl normal-case">
+        Template
+      </button>
     </div>
-    <div className="flex-none">
+    <div className="navbar-end mr-[-1rem]">
       <button className="btn btn-ghost btn-square">
         <svg
           xmlns="http://www.w3.org/2000/svg"
